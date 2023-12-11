@@ -1,0 +1,105 @@
+/* comment */
+.comment {
+    width: 1550px;
+    display: flex;
+    padding: 140px 0px 140px 180px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.comment .title {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 0px;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.comment .title .heading .line {
+    width: 365px;
+    height: 3px;
+    background: #FF7757;
+}
+
+.comment .content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.comment .content .client {
+    display: flex;
+    width: 663px;
+    padding: 40px 40px 40px 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 12px;
+    background: #F5F6F7;
+}
+
+.comment .content .client .avatar1 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 100px;
+    background: url("images/avatar1.png");
+    background-size: 100%;
+}
+
+.comment .content .client .avatar2 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 100px;
+    background: url("images/avatar2.png");
+    background-size: 100%;
+}
+
+.comment .content .client .avatar3 {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 100px;
+    background: url("images/avatar3.png");
+    background-size: 100%;
+}
+
+.comment .content .client p.description {
+    color: #767E86;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    text-align: justify;
+    align-self: stretch;
+}
+
+.comment .content .client .username {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.comment .content .client .username p.name {
+    color: #767E86;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.comment .content .client .username p.job {
+    color: #767E86;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}

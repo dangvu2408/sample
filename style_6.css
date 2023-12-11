@@ -1,0 +1,144 @@
+/* gallery */
+/* planner */
+@keyframes move1 {
+    from { transform: translateY(40px);}
+    to { transform: translateY(0px);}
+}
+
+@keyframes move2 {
+    from {transform: translateY(-40px);}
+    to {transform: translateY(0px);}
+}
+
+.gallery {
+    display: flex;
+    width: 1550px;
+    padding: 140px 180px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.gallery .title {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 0px;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.gallery .title .heading .line {
+    width: 365px;
+    height: 3px;
+    background: #FF7757;
+}
+
+.gallery .content {
+    display: flex;
+    height: 645px;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+}
+
+.gallery .content .container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    cursor: pointer;
+}
+
+/* .trip-planner .img-content {
+    display: flex;
+    height: 620px;
+    align-items: center;
+    gap: 32px;
+    flex: 1 0 0;
+}
+
+.trip-planner .img-content .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+} */
+
+.gallery .content .container .image01 {
+    display: flex;
+    height: 490px;
+    padding: 40px 24px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 26px;
+    background: url("/images/gallery1.jpg") 0px 0px;
+    background-size: 110%;
+    z-index: -1;
+}
+
+.gallery .content .container:hover .image01 {
+    animation: move1 .5s;
+}
+
+.gallery .content .container .image02 {
+    display: flex;
+    height: 490px;
+    padding: 40px 24px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 26px;
+    background: url("/images/gallery2.jpg") 0px 0px;
+    background-size: 110%;
+    z-index: -1;
+}
+
+.gallery .content .container:hover .image02 {
+    animation: move1 .5s;
+}
+
+.gallery .content .container .image03 {
+    display: flex;
+    height: 490px;
+    padding: 40px 24px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 26px;
+    background: url("/images/gallery3.jpg") 0px 0px;
+    background-size: 110%;
+    z-index: -1;
+}
+
+.gallery .content .container:hover .image03 {
+    animation: move1 .5s;
+}
+
+.gallery .content .container .image04 {
+    display: flex;
+    height: 490px;
+    padding: 40px 24px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border-radius: 26px;
+    background: url("/images/gallery4.jpg") 0px 0px;
+    background-size: 110%;
+    z-index: -1;
+}
+
+.gallery .content .container:hover .image04 {
+    animation: move1 .5s;
+}
+
+.gallery .content .container .block {
+    display: none;
+    height: 80px;
+    z-index: -2;
+}
+
+.gallery .content .container:hover .block {
+    display: flex;
+    animation: move2 .5s;
+}
