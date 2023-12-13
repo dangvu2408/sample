@@ -4,7 +4,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Travel - Login</title>
         <link rel="stylesheet" type="text/css" href="login_style.css">
-        <script type="text/javascript" src="main.js" ></script>
     </head>
     <body>
         <div class="hidden"></div>
@@ -34,8 +33,19 @@
             </div>
             <div class="forgot-submit">
                 <p class="forgot">Forgot password</p>
-                <input id="submit" type="submit" name="submit" value="Login"/>
+                <input id="submit-1" type="submit" value="Login"/>
             </div>
         </div>
     </body>
+    <script type="text/javascript">
+        document.getElementById('submit-1').addEventListener('click', function() {
+            var x = document.getElementById('name').value;
+            var y = document.getElementById('pass').value;
+            if (x.length > 0 && y.length > 0) {
+                window.location.href = "sample_index.html";
+            } else {
+                alert('Login failed. Please check your username and password.');
+            }
+        });
+    </script>
 </html>
